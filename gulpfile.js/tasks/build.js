@@ -5,14 +5,19 @@ const lodash			= require('lodash')
 
 module.exports = function( ops ){
 
-	const gulp = ops.gulp
-	const config = ops.config
-	const browserSync = ops.browserSync
-	const gulpSequence = ops.gulpSequence
+	let gulp 				= ops.gulp
+	const config 			= ops.config
+	const browserSync 		= ops.browserSync
+	const gulpSequence 		= ops.gulpSequence
 
 	gulp.task('build', function( cb ){
 
 		process.env.prod = true
+
+		// callback if nothing else
+		gulp._cb = gulp._cb || function(){ cb() }
+		
+		console.log('build')
 
 		let tasks = [
 			'sass',
