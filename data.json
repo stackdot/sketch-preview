@@ -1,0 +1,195 @@
+{
+  "pages" : [
+    {
+      "id" : "4648C1B2-BFC9-40DE-A196-BBEF0C2E3165",
+      "name" : "Page 1",
+      "bounds" : "-578.000000,156.000000,1620.000000,2319.000000",
+      "artboards" : [
+        {
+          "id" : "50CAA0F0-B4AA-4111-940D-79EC2486A2C7",
+          "name" : "Profile",
+          "rect" : {
+            "y" : 156,
+            "x" : 252,
+            "width" : 375,
+            "height" : 667
+          },
+          "trimmed" : {
+            "y" : 156,
+            "x" : 252,
+            "width" : 375,
+            "height" : 667
+          }
+        },
+        {
+          "id" : "CC8324B4-03D9-4AF9-B78B-EEA40A50DD99",
+          "name" : "Profile 4",
+          "rect" : {
+            "y" : 1582,
+            "x" : 252,
+            "width" : 375,
+            "height" : 888
+          },
+          "trimmed" : {
+            "y" : 1582,
+            "x" : 252,
+            "width" : 375,
+            "height" : 888
+          }
+        },
+        {
+          "id" : "4E106192-AA43-4A6F-9C57-14AF721925C7",
+          "name" : "Comment",
+          "rect" : {
+            "y" : 1641,
+            "x" : 667,
+            "width" : 375,
+            "height" : 834
+          },
+          "trimmed" : {
+            "y" : 1641,
+            "x" : 667,
+            "width" : 375,
+            "height" : 834
+          }
+        },
+        {
+          "id" : "34EA3B30-F8E9-4CE6-A820-69305E2F1681",
+          "name" : "Profile 2",
+          "rect" : {
+            "y" : 156,
+            "x" : 667,
+            "width" : 375,
+            "height" : 738
+          },
+          "trimmed" : {
+            "y" : 156,
+            "x" : 667,
+            "width" : 375,
+            "height" : 738
+          }
+        },
+        {
+          "id" : "518FF920-9B6E-441B-ADD2-994E82594F2F",
+          "name" : "Profile Settings",
+          "rect" : {
+            "y" : 863,
+            "x" : -578,
+            "width" : 375,
+            "height" : 1248
+          },
+          "trimmed" : {
+            "y" : 863,
+            "x" : -578,
+            "width" : 375,
+            "height" : 1248
+          }
+        },
+        {
+          "id" : "3167EA13-8CAF-4EA3-9CD0-42335D2FCB04",
+          "name" : "Walkthrough 2",
+          "rect" : {
+            "y" : 156,
+            "x" : -163,
+            "width" : 375,
+            "height" : 667
+          },
+          "trimmed" : {
+            "y" : 156,
+            "x" : -163,
+            "width" : 375,
+            "height" : 667
+          }
+        },
+        {
+          "id" : "73133757-AA00-4589-AAF9-0EEDB4AF63AD",
+          "name" : "Walkthrough",
+          "rect" : {
+            "y" : 156,
+            "x" : -578,
+            "width" : 375,
+            "height" : 667
+          },
+          "trimmed" : {
+            "y" : 156,
+            "x" : -578,
+            "width" : 375,
+            "height" : 667
+          }
+        },
+        {
+          "id" : "7A69BF1D-2B4A-47F8-A3BB-316590067D4C",
+          "name" : "Profile 3",
+          "rect" : {
+            "y" : 1629,
+            "x" : -163,
+            "width" : 375,
+            "height" : 796
+          },
+          "trimmed" : {
+            "y" : 1629,
+            "x" : -163,
+            "width" : 375,
+            "height" : 796
+          }
+        },
+        {
+          "id" : "23F8807F-4B2D-431A-BF8E-AB1F54D816CF",
+          "name" : "Feed",
+          "rect" : {
+            "y" : 863,
+            "x" : -163,
+            "width" : 375,
+            "height" : 726
+          },
+          "trimmed" : {
+            "y" : 863,
+            "x" : -163,
+            "width" : 375,
+            "height" : 726
+          }
+        },
+        {
+          "id" : "1C41FD5E-73D4-4A6A-A7D2-D4B783892102",
+          "name" : "Menu",
+          "rect" : {
+            "y" : 934,
+            "x" : 667,
+            "width" : 375,
+            "height" : 667
+          },
+          "trimmed" : {
+            "y" : 934,
+            "x" : 667,
+            "width" : 375,
+            "height" : 667
+          }
+        },
+        {
+          "id" : "D3E27814-5645-4CDA-9AF3-D470A63C559C",
+          "name" : "Friends",
+          "rect" : {
+            "y" : 863,
+            "x" : 252,
+            "width" : 375,
+            "height" : 679
+          },
+          "trimmed" : {
+            "y" : 863,
+            "x" : 252,
+            "width" : 375,
+            "height" : 679
+          }
+        }
+      ]
+    },
+    {
+      "id" : "6001097E-538E-417D-92F9-2F1469A4B6A8",
+      "name" : "Symbols",
+      "bounds" : "0.000000,0.000000,869.000000,125.000000",
+      "artboards" : [
+
+      ]
+    }
+  ]
+}
