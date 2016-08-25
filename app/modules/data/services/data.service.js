@@ -11,6 +11,7 @@ module.exports = function( $http, $state ){
 			updateCurrentPage: function(){
 				if( this.pages.length < 1 ) return false
 				this.currentPage = lodash.indexOf( this.pages, lodash.find( this.pages, { id: $state.params.id }))
+				if( this.currentPage == -1 ) this.currentPage = 0
 			}
 		},
 		get: function( callback ){

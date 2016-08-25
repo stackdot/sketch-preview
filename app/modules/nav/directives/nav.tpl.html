@@ -1,5 +1,7 @@
-<div>
+<div id="navbar-wrapper">
+	<div id="navbar">
 		<md-tabs md-border-bottom md-selected="ctrl.data.currentPage" tabs-aria-label="navigation links">
 			<md-tab ui-sref="pages.page({id: '{{page.id}}' })" name="{{i}}" ng-repeat="(i, page) in ctrl.data.pages">{{page.name}} </md-tab>
 		</md-tabs>
+	</div>
 </div>

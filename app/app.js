@@ -3,6 +3,7 @@
 
 // 3rd party modules:
 const angular = require('angular')
+const lodash = require('lodash')
 const router = require('angular-ui-router')
 require('angular-animate')
 require('angular-aria')
@@ -17,6 +18,7 @@ require('modules/nav')
 require('modules/page')
 require('modules/artboard')
 
+const $ = require('jquery')
 
 // Create App:
 angular.module('app', [
@@ -75,9 +77,32 @@ angular.module('app', [
 
 
 }])
-.controller('app.main', ['$scope', '$state', function( $scope, $state ){
+.controller('app.main', ['$scope', '$state', '$rootScope', 'dataService', function( $scope, $state, $rootScope, dataService ){
 
-	console.log('Stackdot App Controller')
+	$scope.data = dataService.data
+	if($scope.data.returned) redirectIfNoCurrentPage()
+	$scope.$watch('data.returned', function(){
+		if(lodash.isEmpty( $scope.data.pages ) ) return false
+		redirectIfNoCurrentPage()
+	})
+
+	function redirectIfNoCurrentPage(){
+		if( lodash.isEmpty( lodash.get( $state, 'current.params.id', null ) ) ){
+			$state.go('pages.page', { id: $scope.data.pages[0].id })
+			$scope.data.updateCurrentPage()
+		}
+	}
+	
+
+	$(window).keydown(function(e){
+		if(e.metaKey && ( e.keyCode == 187 || e.keyCode == 189 )){
+			e.preventDefault()
+			let direction = 'in'
+			if( e.keyCode == 189 )
+				direction = 'out'
+			$rootScope.$emit('zoom', { direction: direction, event: e })
+		}
+	})
 
 }])
 

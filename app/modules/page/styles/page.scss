@@ -19,6 +19,7 @@
 	z-index: 6;
 	background: rgba(255,255,255,0.7);
 	padding: 0px 20px;
+	user-select: none;
 }
 
 #boardcontents {
@@ -29,15 +30,23 @@
 	width: 100%;
 	height: 100%;
 	transform-origin: 0 0;
+	transform: scale( .8, .8 );
+	cursor: move;
 	.md-headline {
 		padding-bottom: 8px;
 	}
 }
 
+.scale-button {
+	padding: 8px;
+	margin-top: 14px;
+}
+.scale-title {
+	padding-top: 12px;
+	text-align: center;
+}
 .boarditem {
 	position: absolute;
-	// -webkit-transform-style: preserve-3d; 
-	// -webkit-transform: rotateZ(0deg);
 	img {
 		image-rendering: auto;
 	}

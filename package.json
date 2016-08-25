@@ -1,6 +1,6 @@
 {
   "name": "sketch-preview",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Sketch UI Generator",
   "main": "main.js",
   "scripts": {
