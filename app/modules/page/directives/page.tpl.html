@@ -1,0 +1,18 @@
+<div id="pageframe" flex="100" ng-cloak>
+	<div ui-view="page"></div>
+	<div id="zoom-buttons" layout="row" layout-align="center center">
+		<div>Scale: <strong>{{data.scale}}%</strong></div>
+		<md-slider flex ng-change="didChange()" min="{{minScale}}" max="{{maxScale}}" step="10" ng-model="data.scale" aria-label="red" id="red-slider"></md-slider>
+	</div>
+	<div id="boardlayout" panhandler>
+<!-- 		<div id="hline"></div>
+		<div id="vline"></div> -->
+		<div id="boardcontents">
+			<!-- <div id="insidevline"></div> -->
+			<div ng-dblclick="dblClick(board)" class="boarditem" ng-repeat="board in page.artboards" style="top: {{board.rect.y}}; left: {{board.rect.x}};">
+				<div class="md-headline">{{board.name}}</div>
+				<img ng-src="images/{{board.id}}@2x.jpg" width="{{board.rect.width}}" height="{{board.rect.height}}" alt="">
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,65 @@
+## Sketch Tool Release Notes
+
+### 3.5.2
+
+- Added a --include-namespaces option for SVG export.
+
+### 3.5
+
+- Fixed a crash in the dump command when the document contains a NaN value.
+
+### 3.4.4
+
+- Added -use-id-for-name option, which names the exported files using their id instead of their name.
+
+### 3.4
+
+- Updated for Sketch 3.4 compatibility.
+- Align SketchTool and Sketch version numbers.
+- Fixed a crash when using the --version option.
+- Fixed a crash when dumping text with a non-RGB colorspace.
+- Added additional attribute information when dumping text layers containing multiple font styles.
+- Added -use-id-for-name option, which names the exported files using their id instead of their name.
+
+### 1.4
+
+- Updated for Sketch 3.3 compatibility.
+- Fixed a bug where exporting layers with invalid names would crash sketchtool. We now export them as `<invalid layer name>`, so make sure to check for those in your scripts.
+- Fixed a bug where the export slices command would ignore IDs in --items= or --item= options.
+- Improved dump command output of font information.
+- Added 'list layers' command which outputs information on all layers in a document.
+- Increased the amount of information output for layers in the 'list' commands: we now output the relative and influence rects, and the rotation if there is
+- Documents containing images or patterns should now work ok (for a while there, they caused problems).
+
+
+### 1.3
+
+- Updated for Sketch 3.2 compatibility.
+- Added metadata command to dump metadata for a Sketch file.
+- The layer list commands now include a "trimmed" rect for layers. This should indicate what the size will be if the --trimmed flag is used when exporting.
+- Added notes command to show these release notes.
+- Switched --overwriting option to -V to avoid clash with --version.
+- Added --background option allowing you to set/override the background colour when exporting.
+- Slight tweak to the code which checks for the resource bundle.
+- Output the x and y positions of exported slices when the --outputJSON option is on.
+- Added a --group-contents-only option to force the same behaviour as selecting the "Export Group Contents Only" option in a sketch slice
+- The dump command now includes objectID values for any model objects which have an ID assigned
+
+
+### 1.2
+
+- Updated to understand Sketch 3.1 documents.
+- Slight tweaks to the way trimming and sizing works, which may slightly reduce the size of exported documents.
+- Moved support for old documents into the standalone sketchmigrate tool.
+- We now look for the resources in ../share/sketchtool/resources.bundle (for legacy reasons, we also still check for "sketch resources.bundle" in the old location).
+- Items (pages, artboards, slices etc) with slashes in their names will now correctly export into subfolders.
+
+
+### 1.1.1
+
+- Added an export layers command which lets you export any layer, even if it's not been marked as exportable in the document.
+- Added a --compact option for SVG export which removes some of the extra crud that we would otherwise generate.
+- Added a --trimmed option, although it's not respected currently.
+- Fixed some bugs relating to the --items option.
+- Fixed the app name in generated SVG files.
+

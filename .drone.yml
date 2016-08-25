@@ -1,0 +1,21 @@
+
+build:
+  compile:
+    image: node:6.3.1
+    pull: true
+    commands:
+      - npm update
+
+
+publish:
+  npm:
+    username: $$NPM_USERNAME
+    password: $$NPM_PASSWORD
+    email: $$NPM_EMAIL
+    registry: $$NPM_REGISTRY
+    always_auth: $$NPM_ALWAYS_AUTH
+
+
+cache:
+  mount:
+    - node_modules
