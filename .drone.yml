@@ -14,6 +14,8 @@ publish:
     email: $$NPM_EMAIL
     registry: $$NPM_REGISTRY
     always_auth: $$NPM_ALWAYS_AUTH
+    when:
+      branch: master
 
 
 cache:
