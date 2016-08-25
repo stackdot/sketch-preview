@@ -22,7 +22,7 @@ module.exports = function( ops ){
 			return {
 				exportDir: 	path.resolve( config.app, '../_artboards' ),
 				jsonDir: 	path.resolve( config.app, '../public/data.json' ),
-				sketchFile: path.resolve( config.app, '../sketch/test.sketch' )
+				sketchFile: path.resolve( config.app, '../sketch/social-app-ui-kit.sketch' )
 			}
 		}
 	}

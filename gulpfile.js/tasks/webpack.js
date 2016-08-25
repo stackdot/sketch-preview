@@ -7,7 +7,7 @@ module.exports = function( ops ){
 	const config 			= ops.config
 	const env 				= ops.env
 	const browserSync 		= ops.browserSync
-	const initialCompile 	= false
+	let initialCompile 		= false
 
 	if(!config.tasks.webpack) return
 
