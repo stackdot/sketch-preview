@@ -7,20 +7,29 @@ Sketch Preview
 
 Sketch UI Generator
 
+Generates a static HTML website with your Sketch file.
+
 Requirements:
 ---
 
 - [NodeJS](https://nodejs.org/en/download/) ( Version 6+ )
- - We recommend using [Node Version Manager](https://github.com/creationix/nvm)
-- Gulp: `npm install -g gulp`
+- We recommend using [Node Version Manager](https://github.com/creationix/nvm)
 
 To Get Started:
 ---
 
-- Check out the repo locally
-- run `npm install` inside the directory. (You only have to do this once)
+Install the package:
+		
+	npm install sketch-preview -g
 
-Running the project:
+Now you have a cli tool available, to use it:
+	
+	sketch-preview --input=mysketchfile.sketch --open
+
+The `--open` at the end tells sketch-preview to open a browser tab to view your generated site. Otherwise it will simply build the static site in the `public` directory.
+
+
+Running Dev:
 ---
 
 Inside the directory run:
@@ -29,31 +38,7 @@ Inside the directory run:
 gulp
 ```
 
-There are several options when using gulp, to list them, run:
-
-```bash
-gulp --help
-```
-
 Be sure to run `npm update` to ensure all the NPM dependencies are up to date.
-
-
-Building for prod:
----
-
-To build the project, which puts all built files into `public/` run the following:
-
-```bash
-gulp build
-```
-
-This will:
-
-- minify all javascript files
-- optimize all image files
-- minify css files
-- remove all `console.log` in the code
-
 
 
 
