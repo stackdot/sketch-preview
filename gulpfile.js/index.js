@@ -2,10 +2,8 @@
 
 process.OPS = process.OPS || {}
 
-console.log('Generating Sketch Preview... Please be patient')
-
 // passed in ops:
-const gulp 				= require('gulp')
+const gulp 				= process.gulp || require('gulp')
 const lodash 			= require('lodash')
 const browserSync 		= require('browser-sync')
 const gulpSequence 		= require('gulp-sequence').use( gulp )
@@ -25,7 +23,7 @@ const vendors = [
 
 var config = {
 	app: './app',
-	dest: process.OPS.outputDir || './public',
+	dest: process.OPS.outputPath || './public',
 	uiPort: 5000,
 	tasks: {
 		sass: {

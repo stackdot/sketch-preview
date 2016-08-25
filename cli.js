@@ -18,12 +18,7 @@ if( lodash.isEmpty( OPS.input ) ){
 	return process.exit( 1 )
 }
 
-
-OPS.inputFile = path.resolve( process.cwd(), OPS.input )
-OPS.outputPath = path.resolve( process.cwd(), OPS.output )
-
-process.OPS = OPS
-
-require('./gulpfile.js/index.js')
-
-gulp.start('build')
+const exe = require('./main.js')( OPS, gulp )
+exe(function(){
+	console.log('All Done!')
+})

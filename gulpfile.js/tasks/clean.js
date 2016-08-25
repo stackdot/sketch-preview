@@ -10,7 +10,6 @@ module.exports = function( ops ){
 	const config = ops.config
 
 	gulp.task('clean-artboards', function( cb ){
-
 		let _path = path.resolve( config.dest, '../_artboards' )
 		if(process.OPS.input){
 			_path = path.resolve( process.OPS.outputPath, '../_artboards' )

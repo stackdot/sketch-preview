@@ -24,12 +24,9 @@ module.exports = function( ops ){
 
 		// Running as a global CLI:
 		if( process.OPS.open ){
-			return gulpSequence( 'clean', tasks, 'images', 'browserSync', cb)
+			return gulpSequence( 'clean', tasks, 'images', 'browserSync', gulp._cb)
 		}
-		return gulpSequence( 'clean', tasks, 'images', function(){
-			console.log('All done.')
-			cb()
-		})
+		return gulpSequence( 'clean', tasks, 'images', gulp._cb)
 
 	})
 

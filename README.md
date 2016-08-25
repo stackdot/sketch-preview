@@ -20,12 +20,22 @@ Generates a Interactable HTML website with your Sketch file.
 
 Sketch file credits: [Sketch File](http://www.sketchappsources.com/free-source/1985-social-app-sketch-freebie-resource.html)
 
+
+
+
+
+
 Requirements:
 ---
 
 - Must be on Mac OSX ( You do *not* need Sketch App installed )
 - [NodeJS](https://nodejs.org/en/download/) ( Version 6+ )
  - We recommend using [Node Version Manager](https://github.com/creationix/nvm)
+
+
+
+
+
 
 To Get Started:
 ---
@@ -41,6 +51,36 @@ Now you have a cli tool available, to use it:
 The `--open` at the end tells sketch-preview to open a browser tab to view your generated site. Otherwise it will simply build the static site in the `public` directory.
 
 
+
+
+
+
+
+Including in your Gulp
+---
+
+You can also include this library in your gulp process, firstly make sure you install the package:
+
+	npm install sketch-preview --save
+
+Then inside of your gulpfile.js:
+
+```javascript
+// You must pass in your gulp variable for us to extend:
+const preview = require('sketch-preview')({
+	input: './sketch/TST.sketch',
+}, gulp)
+
+// Generate sketch preview files:
+gulp.task('export', preview)
+```
+
+
+
+
+
+
+
 Running Dev:
 ---
 
@@ -51,6 +91,9 @@ gulp
 ```
 
 Be sure to run `npm update` to ensure all the NPM dependencies are up to date.
+
+
+
 
 
 
