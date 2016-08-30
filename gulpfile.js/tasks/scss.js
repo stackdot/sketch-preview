@@ -26,7 +26,7 @@ module.exports = function( ops ){
 
 		const filename = output+'.css'
 		const paths = lodash.map(config.tasks.sass.paths, function(dir){
-			return path.resolve( __dirname, '../..', dir )
+			return path.resolve( __dirname, '../../', dir )
 		})
 
 		let stream = gulp.src( artifact.src )
@@ -35,6 +35,7 @@ module.exports = function( ops ){
 			stream = stream.pipe(sourcemaps.init())
 		}
 
+		console.log('p', paths)
 		stream = stream.pipe(sass({
 			includePaths: paths
 		}).on('error', notify.onError(function(err){
