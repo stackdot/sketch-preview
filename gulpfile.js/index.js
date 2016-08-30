@@ -30,6 +30,7 @@ var config = {
 			dest: 'styles',
 			paths: [
 				'node_modules/',
+				'../../node_modules/',
 				'node_modules/font-awesome/scss'
 			],
 			artifacts: {
