@@ -12,9 +12,9 @@ module.exports = function( ops ){
 	if(!config.tasks.fonts) return
 
 	const lodash 			= require('lodash')
-	const path 			= require('path')
+	const path 				= require('path')
 	const notify 			= require('gulp-notify')
-	const changed 		= require('gulp-changed')
+	const changed 			= require('gulp-changed')
 
 	const sources = lodash.map( config.tasks.fonts.src, ( src ) => {
 		return path.resolve( __dirname, '../../', src )

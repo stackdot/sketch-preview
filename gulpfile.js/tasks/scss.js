@@ -35,7 +35,6 @@ module.exports = function( ops ){
 			stream = stream.pipe(sourcemaps.init())
 		}
 
-		console.log('p', paths)
 		stream = stream.pipe(sass({
 			includePaths: paths
 		}).on('error', notify.onError(function(err){

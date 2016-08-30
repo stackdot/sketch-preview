@@ -74,7 +74,8 @@ var config = {
 		},
 		fonts: {
 			src: [
-				'node_modules/font-awesome/fonts/**/*'
+				'node_modules/font-awesome/fonts/**/*',
+				'../../node_modules/font-awesome/fonts/**/*'
 			],
 			dest: 'styles/fonts'
 		}
