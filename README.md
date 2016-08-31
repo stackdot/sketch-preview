@@ -1,6 +1,6 @@
-[![Node Version](https://img.shields.io/node/v/sketch-preview.svg?maxAge=60)](https://www.npmjs.com/package/sketch-preview) [![NPM Version](https://img.shields.io/npm/v/sketch-preview.svg?maxAge=60)](https://www.npmjs.com/package/sketch-preview) [![NPM License](https://img.shields.io/npm/l/sketch-preview.svg?maxAge=60)](https://www.npmjs.com/package/sketch-preview) 
+[![Node Version](https://img.shields.io/node/v/sketch-preview.svg)](https://www.npmjs.com/package/sketch-preview) [![NPM Version](https://img.shields.io/npm/v/sketch-preview.svg)](https://www.npmjs.com/package/sketch-preview) [![NPM License](https://img.shields.io/npm/l/sketch-preview.svg)](https://www.npmjs.com/package/sketch-preview) 
 
-[![Build Status](https://drone.stackdot.com/api/badges/stackdot/sketch-preview/status.svg?maxAge=60)](https://drone.stackdot.com/stackdot/sketch-preview) [![dependencies Status](https://img.shields.io/david/stackdot/sketch-preview.svg?maxAge=60)](https://david-dm.org/stackdot/sketch-preview) [![Code Climate](https://codeclimate.com/github/stackdot/sketch-preview/badges/gpa.svg)](https://codeclimate.com/github/stackdot/sketch-preview)
+[![Build Status](https://drone.stackdot.com/api/badges/stackdot/sketch-preview/status.svg)](https://drone.stackdot.com/stackdot/sketch-preview) [![dependencies Status](https://img.shields.io/david/stackdot/sketch-preview.svg)](https://david-dm.org/stackdot/sketch-preview) [![Code Climate](https://codeclimate.com/github/stackdot/sketch-preview/badges/gpa.svg)](https://codeclimate.com/github/stackdot/sketch-preview) [![downloads monthly](https://img.shields.io/npm/dm/sketch-preview.svg)](https://www.npmjs.com/package/sketch-preview)
 
 
 ![alt text](screens/logo.png "Sketch Preview")
